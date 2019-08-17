@@ -5,3 +5,6 @@ alumno
 123456
 
 Prueba
+
+crear  nuevo componente
+ng generate component Header
