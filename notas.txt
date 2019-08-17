@@ -1,0 +1,6 @@
+rlara@galaxy.edu.pe
+
+192.168.1.200
+alumno
+123456
+
