@@ -8,3 +8,8 @@ Prueba
 
 crear  nuevo componente
 ng generate component Header
+ng generate component Footer
+ng generate component SideMenu
+ng generate component Content
+
+augury chrome extension
