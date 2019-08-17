@@ -1,4 +1,9 @@
-/* You can add global styles to this file, and also import other style files */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
     html, body {
       margin: 0;
       height: 100%;
@@ -48,3 +53,27 @@
       padding: 10px;
       text-align: center;
     }
+
+  </style>
+</head>
+<body>
+<header>
+  <h2>Titulo</h2>
+</header>
+<aside>
+  <nav>
+    <ul>
+      <li class="active"><a href="javascript:void(0)">Pagina 1</a></li>
+      <li><a href="#">Pagina 2</a></li>
+      <li><a href="#">Pagina 3</a></li>
+    </ul>
+  </nav>
+</aside>
+<section>
+  <h2>Contenido</h2>
+</section>
+<footer>
+  <p>Pie de Pagina</p>
+</footer>
+</body>
+</html>
