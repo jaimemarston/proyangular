@@ -8,7 +8,7 @@ import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 export class SideMenuComponent implements OnInit {
   @Input () options:string [];
   @Output() optionSelected = new EventEmitter();
-
+  @Input () selected:string ;
 
   constructor() { }
 

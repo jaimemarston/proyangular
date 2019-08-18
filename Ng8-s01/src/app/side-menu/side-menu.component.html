@@ -1,7 +1,8 @@
 <aside>
     <nav>
       <ul>
-        <li *ngFor="let option of options" (click)="optionClicked(option)">
+        <li *ngFor="let option of options"
+         (click)="optionClicked(option)" [ngClass]="{'active': option === selected }"    >
         <a href="#">{{option}}</a>
         </li>
       </ul>

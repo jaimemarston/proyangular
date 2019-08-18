@@ -1,5 +1,7 @@
 
 <app-header [title] ="titleapp"></app-header>
-<app-side-menu [options]="menuOpts" (optionSelected)="optionSelected($event)"></app-side-menu>
+<app-side-menu [options]="menuOpts"
+               [selected]="titlecontent" 
+               (optionSelected)="optionSelected($event)"></app-side-menu>
 <app-content [title]="titlecontent"></app-content>
 <app-footer></app-footer>
