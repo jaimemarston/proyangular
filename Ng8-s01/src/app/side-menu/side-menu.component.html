@@ -1,9 +1,9 @@
 <aside>
     <nav>
       <ul>
-        <li class="active"><a href="javascript:void(0)">Pagina 1</a></li>
-        <li><a href="#">Pagina 2</a></li>
-        <li><a href="#">Pagina 3</a></li>
+        <li *ngFor="let option of options" (click)="optionClicked(option)">
+        <a href="#">{{option}}</a>
+        </li>
       </ul>
     </nav>
   </aside>

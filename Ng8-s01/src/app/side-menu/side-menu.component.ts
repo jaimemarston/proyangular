@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-side-menu',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-menu.component.css']
 })
 export class SideMenuComponent implements OnInit {
+  @Input () options:string [];
+  @Output() optionSelected = new EventEmitter();
+
 
   constructor() { }
 
   ngOnInit() {
+  }
+  optionClicked(option: string){
+    console.log('Option Clikeada: ',option)
+    this.optionSelected.emit(option);
   }
 
 }

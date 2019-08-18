@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, MissingTranslationStrategy } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Ng8-s01';
+  titleapp = 'Angular 8  - Clase 1';
+  titlecontent = 'Seleccione una Opcion';
+  menuOpts = [
+    'Inicio',
+    'Misio',
+    'Vision',
+    'Contactanos'
+  ];
+  
+  optionSelected(option:string){
+    console.log("AppComponent",option);
+    this.titlecontent = option;
+  }
 }
