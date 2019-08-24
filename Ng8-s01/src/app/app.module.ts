@@ -2,10 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { SideMenuComponent } from './side-menu/side-menu.component';
-import { ContentComponent } from './content/content.component';
+import { HeaderComponent } from './components/header/header.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { ContentComponent } from './components/content/content.component';
+import {AppRoutingModule} from './app-routing.module';
+import { ProductsPageComponent } from './pages/products-page/products-page.component';
+import { ProductDetailPageComponent } from './pages/product-detail-page/product-detail-page.component';
 
 @NgModule({
   declarations: [
@@ -13,10 +16,13 @@ import { ContentComponent } from './content/content.component';
     HeaderComponent,
     FooterComponent,
     SideMenuComponent,
-    ContentComponent
+    ContentComponent,
+    ProductsPageComponent,
+    ProductDetailPageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

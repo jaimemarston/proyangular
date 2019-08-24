@@ -1,4 +1,6 @@
-import { Component, MissingTranslationStrategy } from '@angular/core';
+import { Component } from '@angular/core';
+import {ICategory} from './interfaces/category.interface';
+import { categories } from './mock-db/categories';
 
 @Component({
   selector: 'app-root',
@@ -6,17 +8,13 @@ import { Component, MissingTranslationStrategy } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  titleapp = 'Angular 8  - Clase 1';
-  titlecontent = 'Seleccione una Opcion';
-  menuOpts = [
-    'Inicio',
-    'Misio',
-    'Vision',
-    'Contactanos'
-  ];
-  
-  optionSelected(option:string){
-    console.log("AppComponent",option);
-    this.titlecontent = option;
-  }
+    titleApp = 'Angular 8 - Clase 2';
+    menuOpts: ICategory[] = categories;
+
+    /*
+    optionSelected(option: string) {
+      this.titleContent = option;
+      this.router.navigateByUrl('products');
+    }
+    */
 }

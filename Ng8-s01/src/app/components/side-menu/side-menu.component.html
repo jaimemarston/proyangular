@@ -1,0 +1,10 @@
+<aside>
+  <nav>
+    <ul>
+      <li *ngFor="let option of options"
+          routerLinkActive="active">
+        <a [routerLink]="['/products', option.slug]">{{ option.title }}</a>
+      </li>
+    </ul>
+  </nav>
+</aside>

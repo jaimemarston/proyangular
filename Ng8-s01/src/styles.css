@@ -19,7 +19,7 @@
       background: #EEEEEE;
       float: left;
       width: calc(23.3% - 25px);
-      height: calc(100% - 300px);
+      height: 100% ;
       padding: 10px;
       margin: 10px 5px 10px 0;
     }
@@ -36,7 +36,7 @@
       background: #EEEEEE;
       float: left;
       width: calc(76.6% - 25px);
-      height: calc(100% - 300px);
+      height: 100%;
       padding: 10px;
       margin: 10px 0 10px 5px;
       overflow-y: auto;
