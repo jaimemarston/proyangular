@@ -1,1 +1,27 @@
-<p>product-detail-page works!</p>
+<div class="row">
+  <div class="col-9">
+    <div>{{ product.name }}</div>
+    <div>Marca: {{ product.brand }}</div>
+  </div>
+  <div class="col-3">
+    <div>{{ product.price }}</div>
+  </div>
+
+  <div class="col-5">
+    <div>
+      <div>
+        <img style="width: 100%" [src]="product.image" alt="">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4 text-center" *ngFor="let image of product.images" >
+        <img style="width: 100%" [src]="product.image" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="col-5">
+    <div *ngFor="let description of product.descriptions" >
+      {{ description }}
+    </div>
+  </div>
+</div>

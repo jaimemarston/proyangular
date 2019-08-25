@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {ICategory} from './interfaces/category.interface';
-import { categories } from './mock-db/categories';
+import {categories} from './mock-db/categories';
 
 @Component({
   selector: 'app-root',
@@ -10,11 +10,4 @@ import { categories } from './mock-db/categories';
 export class AppComponent {
     titleApp = 'Angular 8 - Clase 2';
     menuOpts: ICategory[] = categories;
-
-    /*
-    optionSelected(option: string) {
-      this.titleContent = option;
-      this.router.navigateByUrl('products');
-    }
-    */
 }

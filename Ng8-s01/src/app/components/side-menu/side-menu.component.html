@@ -1,9 +1,11 @@
 <aside>
   <nav>
-    <ul>
+    <ul class="list-group">
       <li *ngFor="let option of options"
-          routerLinkActive="active">
-        <a [routerLink]="['/products', option.slug]">{{ option.title }}</a>
+          [routerLink]="['/products', option.slug]"
+          routerLinkActive="active"
+          class="list-group-item">
+        {{ option.title }}
       </li>
     </ul>
   </nav>
