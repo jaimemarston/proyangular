@@ -1,0 +1,14 @@
+<aside>
+  <nav>
+    <ul class="list-group">
+      <li *ngFor="let option of options"
+          [routerLink]="['/products', option.slug]"
+          routerLinkActive="active"
+          class="list-group-item">
+        <!-- {{ option.title | uppercase }} -->
+        <!--{{ option.title | lowercase }}-->
+        {{ option.title | titlecase }}
+      </li>
+    </ul>
+  </nav>
+</aside>

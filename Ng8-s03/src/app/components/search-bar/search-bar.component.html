@@ -1,0 +1,12 @@
+<input
+  type="text"
+  class="form-control"
+  placeholder="Ingrese el producto a buscar"
+  [ngModel]="value"
+  (ngModelChange)="valueChange.emit($event)"
+>
+<!--
+  [value]="value ? value : ''"
+  (keyup)="valueChange.emit($event.target.value)"
+  (change)="change.emit($event.target.value)"
+-->
